@@ -3,14 +3,17 @@
     <head>
       <title>CONTACT US!</title>
       <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <!--NAVBAR-->
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+        <nav class="nav-bar">
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          
         <ul>
             <a href="#cat"><li>Cats & Kittens</li></a>
             <a href="#dog"><li>Dog & Puppies</li></a>
@@ -20,22 +23,23 @@
             <a href="#reptile"><li>reptiles</li></a>
             <a href="#video"><li>Videos</li></a>
         </ul>
+    </nav>
         <!--HEADER-->
         <header>
            <div>
-              <h1>Contact Us!!!!!</h1>
+              <h1 class="animate-text">Contact Us!!!!!</h1>
            </div>
         </header>
         <!--FORM-->
         <section>
            <div>
-             <h3>please provide your contact information 
+             <h3 id="contact-h3">please provide your contact information 
                 and a breif message of your inquiry </h3>
                 <div>
                     <form>
                         <input type="text" placeholder="first name">
                         <input type="text" placeholder="last name"><br>
-                        <input type="email" placeholder="Email"><br>
+                        <input type="email" placeholder="Email">
                         <input type="tel" placeholder="Phone Number"><br>
                         <input type="checkbox" id="NewsLetter">
                         <label for="NewsLetter">would you like to recieve our monthly news letter</label>
