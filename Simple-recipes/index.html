@@ -1,15 +1,17 @@
 <!doctype html>
 <html>
+
 <head>
   <title>Simple Recipes</title>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <!--navbar-->
   <nav>
     <ul>
-      <li><a href="#">home</a></li>
+      <li><a href="#">Home</a></li>
       <li class="drop"><a href="#recipes">Recipies</a>
         <div class="rollover-menu">
           <a href="#featured">Featured Recipe</a>
@@ -21,6 +23,7 @@
           <a href="#dessert">Dessert</a>
         </div>
       </li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -51,107 +54,138 @@
           style counterpart, which requires some care when rolling and stretching.
           Here, you just push the dough into the skillet and you're cooking.
           Save the leftovers for lunch!</p>
-        <input type="button" value="recipe">
+        <input id="featured-button" type="button" value="recipe">
       </div>
       <div class="container" id="recipes">
-      <h2>Recipies</h2>
-      <div class="column" id="pasta">
-        <div class="recipe-container">
-          <h3>Suacy Tortelloni Parm</h3>
-          <div>
-            <img src="images/tortelloni.jpeg">
-          </div>
-          <div>
-            <h4>Prep Time</h4>
-            <P>20 - 30 minutes</P>
-            <h4>Level</h4>
-            <p>easy</p>
-            <input type="button" value="recipes">
-          </div>
-        </div>
-      </div>
-      <!--chicken-->
-      <div class="column recipe-card-background" id="chicken">
-        <div class="recipe-container">
-          <h3>Mediterranean Chicken Thighs</h3>
-          <div>
-            <img src="images/chicken-thighs.jpeg">
-          </div>
-          <div>
-            <h4>Prep Time</h4>
-            <P>20 - 30 minutes</P>
-            <h4>Level</h4>
-            <p>easy</p>
-            <input type="button" value="recipes">
+        <h2>Recipies</h2>
+        <div class="column" id="pasta">
+          <div class="recipe-container">
+            <h3>Suacy Tortelloni Parm</h3>
+            <div class="flip">
+              <div class="flip-front">
+                <img src="images/tortelloni.jpeg">
+              </div>
+              <div class="flip-back">
+                <div class="text-container">
+                <h4>Prep Time</h4>
+                <P>20 - 30 minutes</P>
+                <h4>Level</h4>
+                <p>easy</p>
+                <input type="button" value="recipes">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!--chicken-->
+        <div class="column recipe-card-background" id="chicken">
+          <div class="recipe-container">
+            <h3>Mediterranean Chicken Thighs</h3>
+            <div class="flip">
+              <div class="flip-front">
+                <img src="images/chicken-thighs.jpeg">
+              </div>
+              <div class="flip-back">
+                <div class="text-container">
+                <h4>Prep Time</h4>
+                <P>20 - 30 minutes</P>
+                <h4>Level</h4>
+                <p>easy</p>
+                <input type="button" value="recipes">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--pork-->
+        <div class="column recipe-card-background" id="pork">
+          <div class="recipe-container">
+            <h3>Crispy Pork Katsu & Rice</h3>
+            <div class="flip">
+              <div class="flip-front">
+                <img src="images/pork-katsu.jpeg">
+              </div>
+              <div class="flip-back">
+                <div class="text-container">
+                <h4>Prep Time</h4>
+                <P>20 - 30 minutes</P>
+                <h4>Level</h4>
+                <p>medium</p>
+                <input type="button" value="recipes">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--biscuits-->
+        <div class="column" id="biscuit">
+          <div class="recipe-container">
+            <h3>cheddar cheese biscuits</h3>
+            <div class="flip">
+              <div class="flip-front">
+                <img src="images/chedder-biscuits.jpeg">
+              </div>
+              <div class="flip-back">
+                <div class="text-container">
+                <h4>Prep Time</h4>
+                <P>40 - 50 minutes</P>
+                <h4>Level</h4>
+                <p>medium</p>
+                <input type="button" value="recipes">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fish-->
+        <div class="column" id="fish">
+          <div class="recipe-container">
+            <h3>Baked Cod & Scalloped Potatoes</h3>
+            <div class="flip">
+              <div class="flip-front">
+                <img src="images/baked-cod.jpeg">
+              </div>
+              <div class="flip-back">
+                <div class="text-container">
+                <h4>Prep Time</h4>
+                <P>40 - 50 minutes</P>
+                <h4>Level</h4>
+                <p>medium</p>
+                <input type="button" value="recipes">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--dessert-->
+        <div class="column recipe-card-background" id="dessert">
+          <div class="recipe-container">
+            <h3>S'mores cake</h3>
+            <div class="flip">
+              <div class="flip-front">
+                <img src="images/smores.jpeg">
+              </div>
+              <div class="flip-back">
+                <div class="text-container">
+                <h4>Prep Time</h4>
+                <P>50 - 60 minutes</P>
+                <h4>Level</h4>
+                <p>medium</p>
+                <input type="button" value="recipes">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--pork-->
-      <div class="column recipe-card-background" id="pork">
-        <div class="recipe-container">
-          <h3>Crispy Pork Katsu & Rice</h3>
-        <div>
-          <img src="images/pork-katsu.jpeg">
-        </div>
-        <div>
-          <h4>Prep Time</h4>
-          <P>20 - 30 minutes</P>
-          <h4>Level</h4>
-          <p>medium</p>
-          <input type="button" value="recipes">
-        </div>
-      </div>
-    </div>
-    <!--biscuits-->
-    <div class="column" id="biscuit">
-      <div class="recipe-container">
-        <h3>cheddar cheese biscuits</h3>
-        <div>
-          <img src="images/chedder-biscuits.jpeg">
-        </div>
-        <div>
-          <h4>Prep Time</h4>
-          <P>40 - 50 minutes</P>
-          <h4>Level</h4>
-          <p>medium</p>
-          <input type="button" value="recipes">
-        </div>
-      </div>
-    </div>
-    <!--fish-->
-    <div class="column" id="fish">
-      <div class="recipe-container">
-        <h3>Baked Cod & Scalloped Potatoes</h3>
-        <div>
-          <img src="images/baked-cod.jpeg">
-        </div>
-        <div>
-          <h4>Prep Time</h4>
-          <P>40 - 50 minutes</P>
-          <h4>Level</h4>
-          <p>medium</p>
-          <input type="button" value="recipes">
-        </div>
-      </div>
-    </div>
-    <!--dessert-->
-    <div class="column recipe-card-background" id="dessert">
-      <div class="recipe-container">
-        <h3>S'mores cake</h3>
-        <div>
-          <img src="images/smores.jpeg">
-        </div>
-        <div>
-          <h4>Prep Time</h4>
-          <P>50 - 60 minutes</P>
-          <h4>Level</h4>
-          <p>medium</p>
-          <input type="button" value="recipes">
-        </div>
-      </div>
-    </div>
-  </div>
   </section>
+ <!--about-->
+ <h2>About Us</h2>
+ <div><p class="about" id="about">
+  Simple Recipes is your ultimate destination for easy-to-follow recipes that make cooking enjoyable for everyone, whether you're a seasoned chef or a beginner. Founded in the United States out of a passion for home cooking, our mission is to inspire and empower you to create delicious meals with everyday ingredients and simple techniques. We offer a wide range of diverse cuisines, from classic comfort foods to international dishes, all accompanied by step-by-step instructions and helpful tips to ensure your cooking experience is smooth and successful. Our dedicated team of home cooks and food enthusiasts meticulously test each recipe, so you can cook with confidence. At Simple Recipes, we believe that good food brings people together, and we're excited to have you join our community. Let’s cook up something amazing together!
+ </p>
+
+ </div>
   <!--section form-->
   <section>
     <div class="container" id="contact">
