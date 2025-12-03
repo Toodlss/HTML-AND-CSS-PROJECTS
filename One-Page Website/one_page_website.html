@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>THE GAMER SHOP!</title>
-      <meta charset="UTF-8">
+       <title>THE GAMER SHOP!</title>
+       <meta charset="UTF-8">
+       <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
         <!--NAVBAR-->
+      <nav>
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="contact.html">CONTACT</a></li>
@@ -20,6 +22,7 @@
             <a href="#reptile"><li>APEX</li></a>
             <a href="#video"><li>Videos</li></a>
         </ul>
+      </nav>
         <!--HEADER-->
         <header>
            <div>
@@ -34,12 +37,16 @@
                 <div>
                     <form>
                         <input type="text" placeholder="first name">
-                        <input type="text" placeholder="last name"><br>
-                        <input type="email" placeholder="Email"><br>
-                        <input type="tel" placeholder="Phone Number"><br>
+                        <input type="text" placeholder="last name">
+                        <br>
+                        <input type="email" placeholder="Email">
+                        <br>
+                        <input type="tel" placeholder="Phone Number">
+                        <br>
                         <input type="checkbox" id="NewsLetter">
                         <label for="NewsLetter">would you like to recieve our monthly news letter</label>
-                        <textarea placeholder="type message here..."></textarea><br>
+                        <textarea placeholder="type message here..."></textarea>
+                        <br>
                         <input type="submit" value="submit">
                     </form>
                 </div>
@@ -50,39 +57,39 @@
             <div>
                 <h2>Choose A Pet!!!!</h2>
              <!--CAT IMAGE-->
-                <div id="cat">
+                <div id="cat" class="column">
                        <h3>mario</h3>
-                     <img width="1120" height="630" src="images/wallhaven-0jr2jw.jpg" alt="mario">
+                     <img width="560" height="315" src="images/wallhaven-0jr2jw.jpg" alt="mario">
 
                     </div>
                     <!--gamer-->
-                  <div id="dog">
+                  <div id="dog" class="column">
                        <h3>minecraft</h3>
-                     <img width="1120" height="630" src="images/wallhaven-j31g9y.jpg" alt="minecraft">
+                     <img width="560" height="315" src="images/wallhaven-j31g9y.jpg" alt="minecraft">
 
                     </div>
                    
-                  <div id="rabbits">
+                  <div id="rabbits" class="column">
                        <h3>remnant 2</h3>
-                     <img width="1120" height="630" src="images/wallhaven-jxy1qq.jpg" alt="remnant 2">
+                     <img width="560" height="315" src="images/wallhaven-jxy1qq.jpg" alt="remnant 2">
 
                     </div>
                      
-                  <div id="guineapigs">
+                  <div id="guineapigs" class="column">
                        <h3>destiny</h3>
-                     <img width="1120" height="630" src="images/wallhaven-kwgkp6.jpg" alt="destiny">
+                     <img width="560" height="315" src="images/wallhaven-kwgkp6.jpg" alt="destiny">
 
                     </div>
                     
-                  <div id="fish">
+                  <div id="fish" class="column">
                        <h3>mario again</h3>
-                     <img width="1120" height="630" src="images/wallhaven-nz6jdw.jpg" alt="mario again">
+                     <img width="560" height="315" src="images/wallhaven-nz6jdw.jpg" alt="mario again">
 
                     </div>
                     
-                    <div id="reptile">
+                    <div id="reptile" class="column">
                        <h3>APEX</h3>
-                     <img width="1120" height="630" src="images/wallhaven-x66e5l.jpg" alt="APEX">
+                     <img width="560" height="315" src="images/wallhaven-x66e5l.jpg" alt="APEX">
 
                     </div>
                 </div>
