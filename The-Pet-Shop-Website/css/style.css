@@ -149,10 +149,10 @@ img{
 /*sets up properties for overlay*/
 .overlay{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 25px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     width: 500px;
     height: 350px;
     margin-top: 50px;
