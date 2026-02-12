@@ -1,0 +1,96 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {
+     background-color: #f4f4f4;
+     color: #333;
+     line-height: 1.6;
+ }
+
+ /* Header */
+ header {
+     background-color: #279;
+     color: white;
+     text-align: center;
+     padding: 40px 20px;
+     margin: 0px;
+ }
+
+ header h1 {
+     font-size: 2.5rem;
+ }
+
+ header p {
+     font-size: 1.1rem;
+     margin-top: 10px;
+ }
+
+ /* Navigation */
+ nav {
+     background-color: #444;
+     display: flex;
+     justify-content: center;
+     padding: 10px 0;
+     margin: 0px;
+ }
+
+ nav a {
+     color: white;
+     text-decoration: none;
+     margin: 0 15px;
+     font-weight: bold;
+ }
+
+ nav a:hover {
+     text-decoration: underline;
+ }
+
+ /* Sections */
+ section {
+     max-width: 900px;
+     margin: 40px auto;
+     padding: 0 20px;
+ }
+
+ section h2 {
+     margin-bottom: 15px;
+     color: #222;
+ }
+
+ /* Projects */
+ .project {
+     background: white;
+     padding: 20px;
+     margin-bottom: 15px;
+     border-radius: 5px;
+ }
+
+ /* Footer */
+ footer {
+     text-align: center;
+     padding: 20px;
+     background-color: #222;
+     color: white;
+     margin-top: 40px;
+ }
+
+ #contact {
+     text-align: left;
+     padding: 50px 20px;
+     background-color: #f4f4f4;
+ }
+
+ #contact a {
+     color: #2575fc;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s ease;
+ }
+
+ #contact a:hover {
+     color: #6a11cb;
+ }
