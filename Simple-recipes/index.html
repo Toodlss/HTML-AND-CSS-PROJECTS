@@ -54,7 +54,8 @@
           style counterpart, which requires some care when rolling and stretching.
           Here, you just push the dough into the skillet and you're cooking.
           Save the leftovers for lunch!</p>
-        <input id="featured-button" type="button" value="recipe">
+        <input id="featured-button" class="modal-button" type="button" value="recipe" href="#recipeModalOne"
+          data-modal="recipeModalOne">
       </div>
       <div class="container" id="recipes">
         <h2>Recipies</h2>
@@ -67,11 +68,11 @@
               </div>
               <div class="flip-back">
                 <div class="text-container">
-                <h4>Prep Time</h4>
-                <P>20 - 30 minutes</P>
-                <h4>Level</h4>
-                <p>easy</p>
-                <input type="button" value="recipes">
+                  <h4>Prep Time</h4>
+                  <P>20 - 30 minutes</P>
+                  <h4>Level</h4>
+                  <p>easy</p>
+                  <input class="modal-button" href="#recipeModalTwo" type="button" value="recipes">
                 </div>
               </div>
             </div>
@@ -87,11 +88,11 @@
               </div>
               <div class="flip-back">
                 <div class="text-container">
-                <h4>Prep Time</h4>
-                <P>20 - 30 minutes</P>
-                <h4>Level</h4>
-                <p>easy</p>
-                <input type="button" value="recipes">
+                  <h4>Prep Time</h4>
+                  <P>20 - 30 minutes</P>
+                  <h4>Level</h4>
+                  <p>easy</p>
+                  <input type="button" class="modal-button" href="#recipeModalThree" value="recipes" href="#recipeModalTwo">
                 </div>
               </div>
             </div>
@@ -107,11 +108,11 @@
               </div>
               <div class="flip-back">
                 <div class="text-container">
-                <h4>Prep Time</h4>
-                <P>20 - 30 minutes</P>
-                <h4>Level</h4>
-                <p>medium</p>
-                <input type="button" value="recipes">
+                  <h4>Prep Time</h4>
+                  <P>20 - 30 minutes</P>
+                  <h4>Level</h4>
+                  <p>medium</p>
+                  <input type="button" class="modal-button" href="#recipeModalFour" value="recipes">
                 </div>
               </div>
             </div>
@@ -127,11 +128,11 @@
               </div>
               <div class="flip-back">
                 <div class="text-container">
-                <h4>Prep Time</h4>
-                <P>40 - 50 minutes</P>
-                <h4>Level</h4>
-                <p>medium</p>
-                <input type="button" value="recipes">
+                  <h4>Prep Time</h4>
+                  <P>40 - 50 minutes</P>
+                  <h4>Level</h4>
+                  <p>medium</p>
+                  <input class="modal-button" href="#recipeModalFive" type="button" value="recipes">
                 </div>
               </div>
             </div>
@@ -147,11 +148,11 @@
               </div>
               <div class="flip-back">
                 <div class="text-container">
-                <h4>Prep Time</h4>
-                <P>40 - 50 minutes</P>
-                <h4>Level</h4>
-                <p>medium</p>
-                <input type="button" value="recipes">
+                  <h4>Prep Time</h4>
+                  <P>40 - 50 minutes</P>
+                  <h4>Level</h4>
+                  <p>medium</p>
+                  <input type="button" class="modal-button" href="#recipeModalSix" value="recipes">
                 </div>
               </div>
             </div>
@@ -167,11 +168,11 @@
               </div>
               <div class="flip-back">
                 <div class="text-container">
-                <h4>Prep Time</h4>
-                <P>50 - 60 minutes</P>
-                <h4>Level</h4>
-                <p>medium</p>
-                <input type="button" value="recipes">
+                  <h4>Prep Time</h4>
+                  <P>50 - 60 minutes</P>
+                  <h4>Level</h4>
+                  <p>medium</p>
+                  <input type="button" class="modal-button" href="#recipeModalSeven" value="recipes">
                 </div>
               </div>
             </div>
@@ -179,14 +180,365 @@
         </div>
       </div>
   </section>
- <!--about-->
- <h2>About Us</h2>
- <div><p class="about" id="about">
-  Simple Recipes is your ultimate destination for easy-to-follow recipes that make cooking enjoyable for everyone, whether you're a seasoned chef or a beginner. Founded in the United States out of a passion for home cooking, our mission is to inspire and empower you to create delicious meals with everyday ingredients and simple techniques. We offer a wide range of diverse cuisines, from classic comfort foods to international dishes, all accompanied by step-by-step instructions and helpful tips to ensure your cooking experience is smooth and successful. Our dedicated team of home cooks and food enthusiasts meticulously test each recipe, so you can cook with confidence. At Simple Recipes, we believe that good food brings people together, and we're excited to have you join our community. Let’s cook up something amazing together!
- </p>
+  <!--about-->
+  <h2>About Us</h2>
+  <div>
+    <p class="about" id="about">
+      Simple Recipes is your ultimate destination for easy-to-follow recipes that make cooking enjoyable for everyone,
+      whether you're a seasoned chef or a beginner. Founded in the United States out of a passion for home cooking, our
+      mission is to inspire and empower you to create delicious meals with everyday ingredients and simple techniques.
+      We offer a wide range of diverse cuisines, from classic comfort foods to international dishes, all accompanied by
+      step-by-step instructions and helpful tips to ensure your cooking experience is smooth and successful. Our
+      dedicated team of home cooks and food enthusiasts meticulously test each recipe, so you can cook with confidence.
+      At Simple Recipes, we believe that good food brings people together, and we're excited to have you join our
+      community. Let’s cook up something amazing together!
+    </p>
 
- </div>
-  <!--section form-->
+  </div>
+  <!--RECIPE MODALS-->
+  <div id="recipeModalOne" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>Deep Dish Skillet Pizza</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>30-40 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>6</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>Medium</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE MODAL TWO-->
+  <div id="recipeModalTwo" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>Saucy Tortelloni Parm</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>20-30 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>2</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>easy</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE MODAL THREE-->
+  <div id="recipeModalThree" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>Mediterranean Chicken Thighs</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>20-30 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>4</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>easy</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE MODAL FOUR-->
+  <div id="recipeModalFour" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>Crispy Pork Katsu & Rice</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>20-30 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>4</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>Medium</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE MODAL FIVE-->
+  <div id="recipeModalFive" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>Cheddar Cheese Biscuits</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>40-50 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>4</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>Medium</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE MODAL SIX-->
+  <div id="recipeModalSix" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>Baked Cod & Scalloped Potatoes</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>30-40 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>4</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>easy</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE MODAL SEVEN-->
+  <div id="recipeModalSeven" class="recipe-modal">
+    <!--modal content-->
+    <div class="recipe-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h3>S'mores Cake</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Cook Time</h4>
+            <p>50-60 minutes</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Servings</h4>
+            <p>4</p>
+          </div>
+          <div class="rp-column-1">
+            <h4>Level</h4>
+            <p>Medium</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rp-column-1">
+            <h4>Ingredients</h4>
+            <ul class="recipe-list">
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rp-column-2">
+          <h4>Directions</h4>
+          <p class="recipe-directions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--contact form-->
   <section>
     <div class="container" id="contact">
       <h2>Contact Us</h2>
@@ -194,17 +546,17 @@
         <br>
         contact us!
       </h3>
-      <form>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
+      <form id="contactForm">
+        <input id="firstName" type="text" placeholder="First Name">
+        <input id="lastName" type="text" placeholder="Last Name">
         <br>
-        <input type="email" placeholder="email">
-        <input type="tel" placeholder="phone number">
+        <input id="email" type="email" placeholder="email">
+        <input id="phone" type="tel" placeholder="phone number">
         <br>
-        <input type="checkbox" id="subcription">
-        <label for="subcription">Subcribe for weekly recipes</label>
+        <input id="checkbox" type="checkbox" id="subcription">
+        <label id="subscription" for="subcription">Subcribe for weekly recipes</label>
         <br>
-        <textarea placeholder="type message here..."></textarea>
+        <textarea id="message" placeholder="type message here..."></textarea>
         <br>
         <input type="submit" value="submit">
       </form>
@@ -229,6 +581,7 @@
       </tr>
     </table>
   </footer>
+  <script src="javascript/javascript.js"></script>
 </body>
 
 </html>
