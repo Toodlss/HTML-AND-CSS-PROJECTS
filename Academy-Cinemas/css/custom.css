@@ -32,6 +32,16 @@ body {
     height: 100px;
 }
 
+/*shrinks navbar and closes*/
+.nav-shrink {
+    height: 80px;
+    transition: margin-top .5s ease;
+}
+
+.navbar-collapse{
+    transition: margin-top .5s ease;
+}
+
 .navbar-brand {
     color: var(--main-color-accent);
     font-family: var(--main-font-family);
